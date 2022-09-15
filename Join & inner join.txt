@@ -1,0 +1,21 @@
+--select  * from employee where dept_id=(select dept_id from department where lacation_id from location where loctaion id='india';
+
+
+
+*******Hr database*******
+
+select * from employees
+where department_id=(select department id from departments where department_name='Finance');
+
+
+-----------------update-------------
+
+update employees
+set salary=salary+5000
+from employees e inner join departments d
+on e department_id =d.department_id
+where department_name='IT';
+
+
+delete e from employees e inner on departments d on e-department_id= d.department_id 
+where department_name=,IT':

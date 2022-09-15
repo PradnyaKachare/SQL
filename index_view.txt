@@ -1,0 +1,33 @@
+index
+
+create index idmark on student (marks);
+
+select * from student where mark =80;
+
+drop index idmark on student ;
+
+drop table trainer;
+ 
+create table trainer (triner_id int primary key, trainernm varchar(30),
+mobile bigint unique not null);
+
+insert into trainer values(3, 'Aniket',8362598654);
+
+select * from trainer;
+alter table trainer
+drop constraint uq_Trainer_a3dgjy;
+
+
+
+CREATE VIEW VKSTUD AS SELECT RNUM,NAME FROM STUDENT;
+
+select * from student;
+select * from vkstud;
+
+insert into vkstud values(5,'Pradnya');
+delete from vkstud where rno=4;
+
+create view vkauth as select bookname,aname from book b inner join author a
+on b.authorid= a.aid;
+
+select * from vkauth;
